@@ -1,13 +1,17 @@
-import NavBar from "../components/NavBar"
+import React from 'react';
+import NavBar from "../components/NavBar";
 import Clock from "../clock/Clock";
+import { Container } from '@mui/material';
 
-const Page = () => {
+const ClockPage = () => {
     return (
         <div>
-            <NavBar/>
-            <Clock/>
+            <NavBar />
+            <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
+                <Clock />
+            </Container>
         </div>
-    )
+    );
 };
 
-export default Page;
+export default ClockPage;

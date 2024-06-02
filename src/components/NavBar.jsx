@@ -53,6 +53,14 @@ export default function NavBar() {
             >
               Calculator
             </Button>
+            <Button
+              component={Link}
+              to="/clock"
+              variant="text"
+              color="inherit"
+            >
+              Clock
+            </Button>
             <ChevronRightIcon sx={{ display: { xs: 'none', sm: 'block' }, ml: 0 }} />  
           </Box>
         </Toolbar>
