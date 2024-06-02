@@ -2,44 +2,38 @@ import React, { useState } from 'react';
 import { marked } from 'marked';
 import { Container, Typography, Box, TextareaAutosize } from '@mui/material';
 
+marked.setOptions({
+    breaks: true, 
+});
+
 const markdownInitialText = `
 # This is H1
 ## This is H2
-### This is H3
-#### This is H4 and so
 
-**Strong text** or *italicized text* your choice
+**Bold text**
 
-> Wow a blockquote - it is just check the markup
+[Link to GitHub](https://github.com/JuanPabloSQ)
 
-do you like the organised way
-1. First add this
-2. Then this
-3. This is the last one
-
-or non orgranised way
-- I don't
-- like
-- numbers
-
-<br />
-
-\`console.log('Finally I can write Hello World!');\`
-
-<br />
-Or use tags here, who cares
-<br /><br />
-
-but but but always a but
-we will write a function to print hello world
+\`Inline code\`
 
 \`\`\`
-
-function printHelloWorld(sayHelloTo='World') {
-    console.log('Hello' + sayHelloTo);
+Code block
+function helloWorld() {
+    console.log('Hello, world!');
 }
-
 \`\`\`
+
+> Blockquote
+
+1. First item
+2. Second item
+3. Third item
+
+![Image alt text](https://via.placeholder.com/150)
+
+- Item 1
+- Item 2
+- Item 3
 `;
 
 const Markdown = () => {
