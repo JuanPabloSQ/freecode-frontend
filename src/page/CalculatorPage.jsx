@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar"
 import Calculator from "../calculator/Calculator"
 import { Box } from '@mui/material';
 
-const Page = () => {
+const CalculatorPage = () => {
     return (
         <div>
             <NavBar/>
@@ -14,4 +14,4 @@ const Page = () => {
     )
 };
 
-export default Page;
+export default CalculatorPage;

@@ -1,1 +1,0 @@
-const projectName = 'javascript-calculator';
