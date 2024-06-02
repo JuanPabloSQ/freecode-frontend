@@ -1,9 +1,12 @@
-import NavBar from "./components/NavBar"
+import Page from "./page/Page"
+import { ThemeContextProvider } from "./context/ThemeContext"
 
 function App() {
   return (
     <div>
-      <NavBar/>
+    <ThemeContextProvider>
+      <Page/>
+    </ThemeContextProvider>
     </div>
   )
 }
