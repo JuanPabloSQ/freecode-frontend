@@ -120,10 +120,10 @@ const Calculator = () => {
 
   return (
     <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h3" component="h1" gutterBottom>
-          Calculator
-        </Typography>
+      <Typography variant="h3" component="h1" gutterBottom>
+        Calculator
+      </Typography>
+      <Box my={4} border={1} borderColor="white" borderRadius={2} p={2} maxWidth={320} margin="auto">
         <Box className="wrapper">
           <Box className="calc">
             <Box className="screen">
