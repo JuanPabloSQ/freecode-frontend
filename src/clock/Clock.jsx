@@ -189,12 +189,8 @@ const Clock = () => {
             <RefreshIcon />
           </IconButton>
         </Box>
-        <audio
-          id="beep"
-          preload="auto"
-          ref={audioElement}
-        >
-          <source src="./hi-hats.wav" type="audio/wav"></source>
+        <audio id="beep" preload="auto" ref={audioElement}>
+          <source src="/hi-hats.wav" type="audio/wav"></source>
         </audio>
       </Box>
     </Container>
