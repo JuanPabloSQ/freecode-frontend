@@ -61,6 +61,14 @@ export default function NavBar() {
             >
               Clock
             </Button>
+            <Button
+              component={Link}
+              to="/drum-machine"
+              variant="text"
+              color="inherit"
+            >
+              Drum Machine
+            </Button>
             <ChevronRightIcon sx={{ display: { xs: 'none', sm: 'block' }, ml: 0 }} />  
           </Box>
         </Toolbar>
