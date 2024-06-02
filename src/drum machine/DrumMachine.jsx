@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Grid, IconButton, Container } from '@mui/material';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import PauseIcon from '@mui/icons-material/Pause';
-import RefreshIcon from '@mui/icons-material/Refresh';
-import audioArray from  "./audioArray"; // Importa audioArray sin el default
+import audioArray from  "./audioArray"; 
 
 const DrumMachine = () => {
   const [currentAudioText, setCurrentAudioText] = useState('^_^');
