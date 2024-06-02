@@ -6,6 +6,7 @@ import QuoteMachinePage from "./page/QuoteMachinePage"
 import CalculatorPage from "./page/CalculatorPage"
 import ClockPage from "./page/ClockPage"
 import DrumMachinePage from './page/DrumMachinePage';
+import MarkdownPage from './page/MarkdownPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/clock" element={<ClockPage />} />
           <Route path="/drum-machine" element={<DrumMachinePage />} /> 
+          <Route path="/markdown" element={<MarkdownPage />} /> 
         </Routes>
       </Router>
     </ThemeContextProvider>

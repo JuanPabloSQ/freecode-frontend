@@ -69,6 +69,14 @@ export default function NavBar() {
             >
               Drum Machine
             </Button>
+            <Button
+              component={Link}
+              to="/markdown"
+              variant="text"
+              color="inherit"
+            >
+              Markdown
+            </Button>
             <ChevronRightIcon sx={{ display: { xs: 'none', sm: 'block' }, ml: 0 }} />  
           </Box>
         </Toolbar>
