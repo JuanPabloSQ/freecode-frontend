@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Typography, Grid, IconButton, Container } from '@mui/material';
+import { Box, Typography, Grid, Container } from '@mui/material';
 import audioArray from  "./audioArray"; 
 
 const DrumMachine = () => {
@@ -47,12 +47,13 @@ const DrumMachine = () => {
       </Typography>
       <Box my={4}>
         <Typography variant="h5" id="display" textAlign="center" sx={{
-          backgroundColor: '#f5dbb9',
+          backgroundColor: 'black',
           border: '5px solid #dfb57f',
           width: 'fit-content',
           padding: '10px 20px',
           borderRadius: '5px',
           margin: '0 auto 10px',
+          color: "white",
         }}>
           {currentAudioText}
         </Typography>
@@ -63,7 +64,8 @@ const DrumMachine = () => {
                 className="drum-pad"
                 id={audio.text}
                 sx={{
-                  backgroundColor: '#f5dbb9',
+                  backgroundColor: 'white', 
+                  color: 'black', 
                   border: '2px solid #dfb57f',
                   height: '80px',
                   width: '80px',
