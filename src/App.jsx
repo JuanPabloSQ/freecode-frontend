@@ -1,14 +1,20 @@
-import Page from "./page/Page"
-import { ThemeContextProvider } from "./context/ThemeContext"
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeContextProvider } from './context/ThemeContext';
+import Page from './page/Page';
+import QuoteMachinePage from "./page/QuoteMachinePage"
 
 function App() {
   return (
-    <div>
     <ThemeContextProvider>
-      <Page/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Page />} />
+          <Route path="/quote-machine" element={<QuoteMachinePage />} />
+        </Routes>
+      </Router>
     </ThemeContextProvider>
-    </div>
-  )
+  );
 }
 
-export default App
+export default App;

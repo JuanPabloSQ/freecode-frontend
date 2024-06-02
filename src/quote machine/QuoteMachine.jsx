@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Button, IconButton, CircularProgress } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { Box, Typography, Button, CircularProgress } from '@mui/material';
 
 const QuoteMachine = () => {
     const [quote, setQuote] = useState('');
@@ -56,8 +55,8 @@ const QuoteMachine = () => {
                 padding: 2,
                 textAlign: 'center',
                 transitionDuration: '1s',
-                backgroundColor: 'rgb(248, 239, 186)', 
-                color: '#222', 
+                backgroundColor: 'background.default', 
+                color: 'text.primary', 
             }}
         >
             {error ? (
@@ -68,7 +67,7 @@ const QuoteMachine = () => {
                 quote && (
                     <>
                         <Typography variant="h3" gutterBottom>
-                            Here are some awesome technical quotes
+                            Quote Machine
                         </Typography>
                         <Box
                             id="quote-box"
@@ -81,39 +80,21 @@ const QuoteMachine = () => {
                                 backgroundColor: 'rgba(255, 255, 255, 0.8)',
                             }}
                         >
-                            <Typography variant="h5" id="text" sx={{ mb: 2 }}>
+                            <Typography variant="h5" id="text" sx={{ mb: 2, color: 'black' }}>
                                 “{quote.quote}”
                             </Typography>
-                            <Typography variant="subtitle1" id="author">
+                            <Typography variant="subtitle1" id="author" sx={{ color: 'black' }}>
                                 - {quote.author}
                             </Typography>
-                            <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
-                                <IconButton
-                                    component="a"
-                                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                                        quote.quote
-                                    )}`}
-                                    target="_blank"
-                                    sx={{
-                                        backgroundColor: '#222',
-                                        color: '#FFF',
-                                        borderColor: '#222a',
-                                        '&:hover': {
-                                            backgroundColor: '#222',
-                                            opacity: 0.8,
-                                        },
-                                    }}
-                                >
-                                    <TwitterIcon />
-                                </IconButton>
+                            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
                                 <Button
                                     variant="contained"
                                     onClick={generateRandom}
                                     sx={{
-                                        backgroundColor: '#222',
-                                        color: '#FFF',
+                                        backgroundColor: 'text.primary',
+                                        color: 'background.default',
                                         '&:hover': {
-                                            backgroundColor: '#222',
+                                            backgroundColor: 'text.primary',
                                             opacity: 0.8,
                                         },
                                     }}

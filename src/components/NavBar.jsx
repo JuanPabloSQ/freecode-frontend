@@ -2,6 +2,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'; // Importar Link desde React Router
 import { useTheme } from '@mui/material/styles';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -51,22 +52,12 @@ export default function NavBar() {
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Button
-              sx={{
-                color: "white",
-                display: { xs: 'none', sm: 'block' },
-                minWidth: 0,
-                padding: 0,
-                ml: 2,
-                mr: 0,  
-                pointerEvents: 'none',  
-                cursor: 'default',  
-                '&:hover': {
-                  backgroundColor: 'transparent',
-                },
-              }}
-              disableRipple
+              component={Link} 
+              to="/quote-machine" 
+              variant="text" 
+              color="inherit"
             >
-              /
+              Quote Machine
             </Button>
             <ChevronRightIcon sx={{ display: { xs: 'none', sm: 'block' }, ml: 0 }} />  
           </Box>
@@ -75,6 +66,3 @@ export default function NavBar() {
     </Box>
   );
 }
-
-
-
