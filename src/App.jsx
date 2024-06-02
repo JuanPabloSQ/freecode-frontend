@@ -16,7 +16,7 @@ function App() {
           <Route path="/quote-machine" element={<QuoteMachinePage />} />
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/clock" element={<ClockPage />} />
-          <Route path="/drum-machine" element={<DrumMachine />} /> {/* Agrega un elemento faltante después de la ruta */}
+          <Route path="/drum-machine" element={<DrumMachine />} /> 
         </Routes>
       </Router>
     </ThemeContextProvider>
