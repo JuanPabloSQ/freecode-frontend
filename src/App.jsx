@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeContextProvider } from './context/ThemeContext';
 import Page from './page/Page';
 import QuoteMachinePage from "./page/QuoteMachinePage"
+import CalculatorPage from "./page/CalculatorPage"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Page />} />
           <Route path="/quote-machine" element={<QuoteMachinePage />} />
+          <Route path="/calculator" element={<CalculatorPage />} />
         </Routes>
       </Router>
     </ThemeContextProvider>
