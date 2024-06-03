@@ -1,13 +1,23 @@
-import NavBar from "../components/NavBar"
+import React from 'react';
+import NavBar from "../components/NavBar";
 import Markdown from "../markdown/Markdown";
-
+import { Container, Box } from '@mui/material';
 
 const MarkdownPage = () => {
     return (
-        <div>
+        <Box>
             <NavBar/>
-            <Markdown/>
-        </div>
+            <Container 
+                maxWidth="md" 
+                sx={{ 
+                    mt: 10, 
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}
+            >
+                <Markdown />
+            </Container>
+        </Box>
     )
 };
 
