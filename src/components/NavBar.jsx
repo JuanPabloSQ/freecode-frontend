@@ -20,7 +20,7 @@ export default function NavBar() {
           left: '50%',
           transform: 'translateX(-50%)',
           borderRadius: '20px',
-          width: { xs: '90%', sm: '62%' },
+          width: { xs: '90%', sm: '52%' },
           boxShadow: theme.shadows[5],
           backgroundColor: theme.palette.background.paper,
           color: theme.palette.text.primary,

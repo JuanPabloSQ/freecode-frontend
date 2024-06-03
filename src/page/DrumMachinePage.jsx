@@ -6,7 +6,7 @@ const DrumMachinePage = () => {
     return (
         <div>
             <NavBar/>
-            <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
+            <Container maxWidth="md" sx={{ mt: 10, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'calc(80vh - 64px)' }}>
                 <DrumMachine/>
             </Container>
         </div>
