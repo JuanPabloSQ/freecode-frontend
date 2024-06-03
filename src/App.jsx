@@ -13,12 +13,12 @@ function App() {
     <ThemeContextProvider>
       <Router>
         <Routes>
-          <Route path="freecode-frontend/" element={<Page />} />
-          <Route path="freecode-frontend/quote-machine" element={<QuoteMachinePage />} />
-          <Route path="freecode-frontend/calculator" element={<CalculatorPage />} />
-          <Route path="freecode-frontend/clock" element={<ClockPage />} />
-          <Route path="freecode-frontend/drum-machine" element={<DrumMachinePage />} /> 
-          <Route path="freecode-frontend/markdown" element={<MarkdownPage />} /> 
+          <Route path="/freecode-frontend/" element={<Page />} />
+          <Route path="/freecode-frontend/calculator" element={<CalculatorPage />} />
+          <Route path="/freecode-frontend/clock" element={<ClockPage />} />
+          <Route path="/freecode-frontend/quote-machine" element={<QuoteMachinePage />} />
+          <Route path="/freecode-frontend/drum-machine" element={<DrumMachinePage />} /> 
+          <Route path="/freecode-frontend/markdown" element={<MarkdownPage />} /> 
         </Routes>
       </Router>
     </ThemeContextProvider>
