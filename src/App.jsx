@@ -14,27 +14,27 @@ const router = createHashRouter(
       path: "/",
       children: [
         {
-          path: "freecode-frontend/",
+          path: "/",
           element: <Page />,
         },
         {
-          path: "freecode-frontend/calculator",
+          path: "calculator",
           element: <CalculatorPage />,
         },
         {
-          path: "freecode-frontend/clock",
+          path: "clock",
           element: <ClockPage />,
         },
         {
-          path: "freecode-frontend/quote-machine",
+          path: "quote-machine",
           element: <QuoteMachinePage />,
         },
         {
-          path: "freecode-frontend/drum-machine",
+          path: "drum-machine",
           element: <DrumMachinePage />,
         },
         {
-          path: "freecode-frontend/markdown",
+          path: "markdown",
           element: <MarkdownPage />,
         },
       ],

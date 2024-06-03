@@ -31,7 +31,7 @@ export default function NavBar() {
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Button
               component={Link}
-              to="/freecode-frontend/"
+              to="/"
               variant="text"
               color="inherit"
             >
@@ -39,7 +39,7 @@ export default function NavBar() {
             </Button>
             <Button
               component={Link}
-              to="/freecode-frontend/quote-machine"
+              to="/quote-machine"
               variant="text"
               color="inherit"
             >
@@ -47,7 +47,7 @@ export default function NavBar() {
             </Button>
             <Button
               component={Link}
-              to="/freecode-frontend/calculator"
+              to="/calculator"
               variant="text"
               color="inherit"
             >
@@ -55,7 +55,7 @@ export default function NavBar() {
             </Button>
             <Button
               component={Link}
-              to="/freecode-frontend/clock"
+              to="/clock"
               variant="text"
               color="inherit"
             >
@@ -63,7 +63,7 @@ export default function NavBar() {
             </Button>
             <Button
               component={Link}
-              to="/freecode-frontend/drum-machine"
+              to="/drum-machine"
               variant="text"
               color="inherit"
             >
@@ -71,7 +71,7 @@ export default function NavBar() {
             </Button>
             <Button
               component={Link}
-              to="/freecode-frontend/markdown"
+              to="/markdown"
               variant="text"
               color="inherit"
             >
